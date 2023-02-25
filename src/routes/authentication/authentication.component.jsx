@@ -4,11 +4,6 @@ import { signInWithGooglePopup,createUserDocumentFromAuth} from "../../utilities
 
 import "./authentication.styles.scss"
 
-const logSignInUser = async () => {
-    const response = await signInWithGooglePopup();
-    const userRef = await createUserDocumentFromAuth(response.user);
-    console.log(response)
-}
 
 const Authentication = () => {
   return (
