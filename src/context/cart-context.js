@@ -24,10 +24,6 @@ const addCartItem = (product, items) => {
     return [newItem,...items]
    }
    
-//    var updatedCartProduct = {...cartProduct,quantity:cartProduct.quantity + 1};
-//    var filteredItems = items.filter(i =>i.id !== updatedCartProduct.id)
-//    return [updatedCartProduct, ...filteredItems];
-
    return items.map((item) =>
       item.id == cartProduct.id ? {...cartProduct, quantity:cartProduct.quantity + 1}
       : {...item}
