@@ -20,7 +20,8 @@ const Navigation = () => {
                 <LogoContainer to='/'>
                     {/* <CrwnLogo className='logo' /> */}
                     <Logo>
-                        <h3 className='logo'>INVOGUE</h3>
+                        {/* <h3 className='logo'>INVOGUE</h3> */}
+                        INVOGUE
                     </Logo>
                 </LogoContainer>
                 <NavLinkContainer>
