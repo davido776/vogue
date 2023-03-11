@@ -10,8 +10,6 @@ import {
 } from '../../utilities/firebase/firebase.utils';
 
 
-import { UserContext } from '../../context/user-context';
-
 import { SignInContainer,ButtonContainer } from './sign-in-form-styles';
 
 const defaultFormFields = {
