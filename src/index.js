@@ -7,19 +7,14 @@ import { store } from './store/store';
 
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
-import { CategoryProvider } from './context/categories-context';
-import { CartContext, CartProvider } from './context/cart-context';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
       <BrowserRouter>
-          <CategoryProvider>
-            <CartProvider>
-              <App />
-            </CartProvider>
-          </CategoryProvider>
+        <App />
       </BrowserRouter>
     </Provider>
   </React.StrictMode>
